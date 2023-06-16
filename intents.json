@@ -1,0 +1,846 @@
+
+{
+  "intents": [
+    {
+      "tag": "hello",
+      "patterns": [
+        "Good morning",
+        "Good evening",
+        "Good afternoon",
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello"
+
+      ],
+      "responses": [
+        "Hey",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "Good afternoon, how can I help?",
+        "Good evening, how can I help?",
+        "Good morning, how can I help?",
+        "Am fine, how can I help?"
+      ]
+    },
+    {
+      "tag": "bye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Good day"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "GERD",
+      "patterns": [
+        "Am experiencing stomach pain, acidity, ulcers on tongue, vomiting, cough, chest pain",
+        "Am experiencing acidity, ulcers on tongue, vomiting, cough, chest pain",
+        "Am experiencing stomach pain, ulcers on tongue, vomiting, cough, chest pain",
+        "Am experiencing stomach pain, acidity, ulcers on tongue, vomiting, cough, chest pain",
+        "Am experiencing stomach pain, acidity, ulcers on tongue, cough, chest pain",
+        "Am experiencing stomach pain, acidity, ulcers on tongue, vomiting, cough"
+      ],
+      "responses": [
+        "You may have Gerd. Take the following Precautions: Avoid fatty spicy food, Avoid lying down after eating, Maintain healthy weight, Do exercise"
+
+      ]
+    },
+    {
+      "tag": "Allergy",
+      "patterns": [
+         "Am experiencing continuous sneezing, shivering, chills, watering from eyes",
+         "Experiencing shivering, chills, watering from eyes",
+         "Experiencing continuous sneezing, chills, watering from eyes",
+         "Experiencing continuous sneezing, shivering, watering from eyes",
+         "Experiencing continuous sneezing, shivering, chills"
+      ],
+      "responses": [
+        "You may have Allergy. Take the following Precautions: Apply calamine, cover area with bandage, use ice to compress itching."
+
+      ]
+    },
+     {
+      "tag": "fungal_infection",
+      "patterns": [
+        "Am experiencing itching, skin rash, nodal skin eruptions, dischromic patches",
+        "Experiencing skin rash, nodal skin eruptions, dischromic patches",
+        "Experiencing itching, nodal skin eruptions, dischromic patches",
+        "Experiencing itching skin rash, dischromic patches",
+        "Experiencing itching, skin rash, nodal skin eruptions"
+      ],
+      "responses": [
+        "You may have Fungal Infection. Take the following Precautions: Bath twice a day, use detol or neem in bathing water, keep infected area dry, use clean cloths"
+      ]
+    },
+    {
+      "tag": "Chronic cholestasis",
+      "patterns": [
+        "Am experiencing, itching, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing, itching, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing, itching, vomiting, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing, itching, vomiting, yellowish skin, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing, itching, vomiting, yellowish skin, nausea, abdominal pain, yellowing of eyes",
+        "Am experiencing, itching, vomiting, yellowish skin, nausea, loss of appetite, yellowing of eyes",
+        "Am experiencing, itching, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain,",
+        "Am experiencing, itching, vomiting, loss of appetite, abdominal pain, yellowing of eyes"
+      ],
+      "responses": [
+        "You may have Chronic Cholestasis. Take the following Precautions: Cold baths, Anti itch medicine. Consult doctor, Eat healthy."
+      ]
+    },
+
+    {
+      "tag": "Drug Reaction",
+      "patterns": [
+        "Am experiencing itching, skin rash, stomach pain, burning micturition, spotting urination",
+        "Am experiencing skin rash, stomach pain, burning micturition, spotting urination",
+        "Am experiencing itching, stomach pain, burning micturition, spotting urination",
+        "Am experiencing itching, skin rash, burning micturition, spotting urination",
+        "Am experiencing itching, skin rash, stomach pain, spotting urination",
+        "Am experiencing stomach pain, burning micturition, spotting urination",
+        "Am experiencing itching, skin rash, stomach pain, burning micturition"
+
+      ],
+      "responses": [
+        "You may have Drug Reaction. Take the following Precautions: Stop irritation, Consult nearest hospital, Stop taking drug"
+
+      ]
+    },
+
+    {
+      "tag": "Acne",
+      "patterns": [
+         "Am experiencing skin rash, pus filled pimples, blackheads, scurring",
+         "Am experiencing skin rash, pus filled pimples, blackheads",
+         "Am experiencing pus filled pimples, blackheads, scurring",
+         "Am experiencing skin rash, blackheads, scurring",
+         "Am experiencing pus filled pimples, blackheads"
+      ],
+      "responses": [
+        "You may have Acne. Take the following Precautions: Bath twice a day, Avoid fatty spicy food, Drink plenty of water, Avoid too many products."
+      ]
+    },
+
+    {
+      "tag": "Urinary tract infection",
+      "patterns": [
+         "Am experiencing burning micturition, bladder discomfort, foul smell of urine, continuous feel of urine"
+
+      ],
+      "responses": [
+        "You may have Urinary tract infection. Take the following Precautions: Drink plenty of water, Increase vitamin c intake, Drink cranberry juice, Take probiotics."
+
+      ]
+    },
+
+    {
+      "tag": "Psoriasis",
+      "patterns": [
+         "Am experiencing skin rash, joint pain, skin peeling, silver like dusting, small dents in nails, inflammatory nails"
+
+      ],
+      "responses": [
+        "You may have Psoriasis. Take the following Precautions: Wash hands with warm soapy water, Stop bleeding using pressure, Consult doctor, Salt baths."
+
+      ]
+    },
+
+    {
+      "tag": "Impetigo",
+      "patterns": [
+         "Am experiencing skin rash, high fever, blister, red sore around nose, yellow crust ooze"
+
+      ],
+      "responses": [
+        "You may have Impetigo. Take the following Precautions: Soak affected area in warm water, Use antibiotics, Remove scabs with wet compressed cloth, Consult doctor."
+
+      ]
+    },
+
+    {
+      "tag": "Peptic ulcer",
+      "patterns": [
+        "Am experiencing vomiting, loss of appetite, abdominal pain, passage of gases, internal itching",
+        "Am experiencing vomiting, indigestion, abdominal pain, passage of gases, internal itching",
+        "Am experiencing indigestion, loss of appetite, abdominal pain, passage of gases, internal itching",
+        "Am experiencing vomiting, loss of appetite, abdominal pain, passage of gases, internal itching",
+        "Am experiencing vomiting, indigestion, abdominal pain, passage of gases, internal itching",
+        "Am experiencing vomiting, indigestion, loss of appetite, passage of gases, internal itching",
+        "Am experiencing vomiting, indigestion, loss of appetite, abdominal pain, internal itching",
+        "Am experiencing vomiting, indigestion, loss of appetite, abdominal pain, passage of gases",
+        "Am experiencing vomiting, indigestion, loss of appetite, abdominal pain, passage of gases, internal itching",
+        "Am experiencing vomiting, indigestion, loss of appetite, abdominal pain, passage of gases, internal itching"
+      ],
+      "responses": [
+        "You may have Peptic ulcer. Take the following Precautions: Avoid fatty spicy food, Consume probiotic food, Eliminate milk, Limit alcohol."
+
+      ]
+    },
+
+    {
+      "tag": "AIDS",
+      "patterns": [
+         "Am experiencing muscle wasting, patches in throat, high fever, extra marital contacts",
+        "Am experiencing patches in throat, high fever, extra marital contacts",
+        "Am experiencing muscle wasting, high fever, extra marital contacts",
+        "Am experiencing muscle wasting, patches in throat, extra marital contacts",
+        "Am experiencing muscle wasting, patches in throat, high fever",
+        "Am experiencing muscle wasting, patches in throat, high fever, extra marital contacts",
+        "Am experiencing muscle wasting, patches in throat, high fever, extra marital contacts",
+        "Am experiencing patches in throat, high fever, extra marital contacts",
+        "Am experiencing muscle wasting, high fever, extra marital contacts",
+        "Am experiencing muscle wasting, patches in throat, high fever"
+      ],
+      "responses": [
+        "You may have AIDS. Take the following Precautions: Avoid open cuts, Wear ppe if possible, Consult doctor."
+
+      ]
+    },
+
+    {
+      "tag": "Diabetes",
+      "patterns": [
+        "Am experiencing fatigue, weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria",
+        "Am experiencing fatigue, weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria",
+        "Am experiencing weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria",
+        "Am experiencing fatigue, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria",
+        "Am experiencing fatigue, weight loss, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria",
+        "Am experiencing fatigue, weight loss, restlessness, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria",
+        "Am experiencing fatigue, weight loss, restlessness, lethargy, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria",
+        "Am experiencing fatigue, weight loss, restlessness, lethargy, irregular sugar level, obesity, excessive hunger, increased appetite, polyuria",
+        "Am experiencing fatigue, weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted_vision, excessive hunger, increased appetite, polyuria",
+        "Am experiencing fatigue, weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, increased appetite, polyuria"
+      ],
+      "responses": [
+        "You may have Diabetes. Take the following Precautions: Have balanced diet, Do exercise, Consult doctor."
+
+      ]
+    },
+
+     {
+      "tag": "Gastroenteritis",
+      "patterns": [
+         "Am experiencing vomiting, sunken eyes, dehydration, diarrhoea",
+        "Am experiencing vomiting, sunken eyes, dehydration, diarrhoea",
+        "Am experiencing sunken eyes, dehydration, diarrhoea",
+        "Am experiencing vomiting, dehydration, diarrhoea",
+        "Am experiencing vomiting, sunken eyes, diarrhoea",
+        "Am experiencing vomiting, sunken eyes, dehydration",
+        "Am experiencing vomiting, sunken eyes, dehydration, diarrhoea",
+        "Am experiencing sunken eyes, dehydration, diarrhoea",
+        "Am experiencing vomiting, dehydration, diarrhoea",
+        "Am experiencing vomiting, sunken eyes, diarrhoea"
+      ],
+      "responses": [
+        "You may have Gastroenteritis. Take the following Precautions: Stop eating solid food for while, Try taking small sips of water, Rest, Ease back into eating."
+
+      ]
+    },
+
+     {
+      "tag": "Bronchial Asthma",
+      "patterns": [
+         "Am experiencing fatigue, cough, high fever, breathlessness, family history, mucoid sputum",
+        "Am experiencing cough, high fever, breathlessness, family history, mucoid sputum",
+        "Am experiencing fatigue, high fever, breathlessness, family history, mucoid sputum",
+        "Am experiencing fatigue, cough, breathlessness, family history, mucoid sputum",
+        "Am experiencing fatigue, cough, high fever, family history, mucoid sputum",
+        "Am experiencing fatigue, cough, high fever, breathlessness, mucoid sputum",
+        "Am experiencing fatigue, cough, high fever, breathlessness, family history",
+        "Am experiencing fatigue, cough, high fever, breathlessness, family history, mucoid sputum",
+        "Am experiencing cough, high fever, breathlessness, family history, mucoid sputum",
+        "Am experiencing fatigue, high fever, breathlessness, family history, mucoid sputum"
+      ],
+      "responses": [
+        "You may have Bronchial Asthma. Take the following Precautions: Switch to loose cloothing, Take deep breaths, Get away from trigger, Seek help."
+
+      ]
+    },
+
+     {
+      "tag": "Hypertension",
+      "patterns": [
+         "Am experiencing headache, chest pain, dizziness, loss of balance, lack of concentration",
+        "Am experiencing chest pain, dizziness, loss of balance, lack of concentration",
+        "Am experiencing headache, dizziness, loss of balance, lack of concentration",
+        "Am experiencing headache, chest pain, loss of balance, lack of concentration",
+        "Am experiencing headache, chest pain, dizziness, lack of concentration",
+        "Am experiencing headache, chest pain, dizziness, loss of balance",
+        "Am experiencing headache, chest pain, dizziness, loss of balance, lack of concentration",
+        "Am experiencing chest pain, dizziness, loss of balance, lack of concentration",
+        "Am experiencing headache, dizziness, loss of balance, lack of concentration",
+        "Am experiencing headache, chest pain, loss of balance, lack of concentration"
+      ],
+      "responses": [
+        "You may have Hypertension. Take the following Precautions: Do meditation, Salt baths, Reduce stress, Get proper sleep."
+      ]
+    },
+
+     {
+      "tag": "Allergy",
+      "patterns": [
+         "Am experiencing continuous sneezing, shivering, chills, watering from eyes",
+         "Experiencing shivering, chills, watering from eyes",
+         "Experiencing continuous sneezing, chills, watering from eyes",
+         "Experiencing continuous sneezing, shivering, watering from eyes",
+         "Experiencing continuous sneezing, shivering, chills"
+      ],
+      "responses": [
+        "You may have Allergy. Take the following Precautions: Apply calamine, cover area with bandage, use ice to compress itching."
+
+      ]
+    },
+
+     {
+      "tag": "Migraine",
+      "patterns": [
+         "Am experiencing acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual disturbances",
+        "Am experiencing headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual disturbances",
+        "Am experiencing headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual disturbances",
+        "Am experiencing acidity, indigestion, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual_disturbances",
+        "Am experiencing indigestion, headache, excessive hunger, stiff neck, depression, irritability, visual disturbances",
+        "Am experiencing acidity, indigestion, headache, blurred and distorted vision, stiff neck, depression, irritability, visual disturbances",
+        "Am experiencing acidity, indigestion, headache, blurred and distorted vision, excessive hunger, depression, irritability, visual disturbances",
+        "Am experiencing acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, irritability, visual disturbances",
+        "Am experiencing acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, visual disturbances",
+        "Am experiencing acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability"
+      ],
+      "responses": [
+        "You may have Migraine. Take the following Precautions: Do meditation, Reduce stress, Use poloroid glasses in sun, Consult doctor."
+
+      ]
+    },
+
+     {
+      "tag": "Cervical spondylosis",
+      "patterns": [
+         "Am experiencing back pain, weakness in limbs, neck pain, dizziness, loss of balance",
+        "Am experiencing back pain, weakness in limbs, neck pain, dizziness, loss of balance",
+        "Am experiencing weakness in limbs, neck pain, dizziness, loss of balance",
+        "Am experiencing back pain, neck pain, dizziness, loss of balance",
+        "Am experiencing back pain, weakness in limbs, dizziness, loss of balance",
+        "Am experiencing back pain, weakness in limbs, neck pain, loss of balance",
+        "Am experiencing back pain, weakness in limbs, neck pain, dizziness",
+        "Am experiencing back pain, weakness in limbs, neck pain, dizziness, loss of balance",
+        "Am experiencing weakness in limbs, neck pain, dizziness, loss of balance",
+        "Am experiencing back pain, neck pain, dizziness, loss of balance"
+      ],
+      "responses": [
+        "You may have Cervical spondylosis. Take the following Precautions: Use heating pad or cold pack, Do exercise, Take otc pain relive, Consult doctor."
+
+      ]
+    },
+
+     {
+      "tag": "Paralysis (brain hemorrhage)",
+      "patterns": [
+         "Am experiencing vomiting, headache, weakness of one body side, altered sensorium",
+        "Am experiencing vomiting, headache, weakness of one body side, altered sensorium",
+        "Am experiencing headache, weakness of one body side, altered sensorium",
+        "Am experiencing vomiting, weakness of one body side, altered sensorium",
+        "Am experiencing vomiting, headache, altered sensorium",
+        "Am experiencing vomiting, headache, weakness of one body side",
+        "Am experiencing vomiting, headache, weakness of one body side, altered sensorium",
+        "Am experiencing headache, weakness of one body side, altered sensorium",
+        "Am experiencing vomiting, weakness of one body side, altered sensorium",
+        "Am experiencing vomiting, headache, altered sensorium"
+
+      ],
+      "responses": [
+        "You may have Paralysis (brain hemorrhage). Take the following Precautions: do massage, eat healthy, do exercise,consult doctor."
+
+      ]
+    },
+
+     {
+      "tag": "Jaundice",
+      "patterns": [
+         "Am experiencing itching, vomiting, fatigue, weight loss, high fever, yellowish skin, dark urine, abdominal pain",
+        "Am experiencing itching, vomiting, fatigue, weight loss, high fever, yellowish skin, dark urine, abdominal pain",
+        "Am experiencing vomiting, fatigue, weight loss, high fever, yellowish skin, dark urine, abdominal pain",
+        "Am experiencing itching, fatigue, weight loss, high fever, yellowish skin, dark urine, abdominal pain",
+        "Am experiencing itching, vomiting, weight loss, high fever, yellowish skin, dark urine, abdominal pain",
+        "Am experiencing itching, vomiting, fatigue, high fever, yellowish skin, dark urine, abdominal pain",
+        "Am experiencing itching, vomiting, fatigue, weight loss, yellowish skin, dark urine, abdominal pain",
+        "Am experiencing itching, vomiting, fatigue, weight loss, high fever, dark urine, abdominal pain",
+        "Am experiencing itching, vomiting, fatigue, weight loss, high fever, yellowish skin, abdominal pain",
+        "Am experiencing itching, vomiting, fatigue, weight loss, high fever, yellowish skin, dark urine"
+
+      ],
+      "responses": [
+        "You may have Jaundice. Take the following Precautions: drink plenty of water, consume milk thistle, eat fruits and high fiberous food, Take medication."
+
+      ]
+    },
+
+     {
+      "tag": "Malaria",
+      "patterns": [
+         "Am experiencing chills, vomiting, high fever, sweating, headache, nausea, muscle pain",
+        "Am experiencing chills, vomiting, high fever, sweating, headache, nausea, diarrhoea, muscle pain",
+        "Am experiencing chills, vomiting, high fever, sweating, headache, nausea, diarrhoea, muscle pain",
+        "Am experiencing vomiting, high fever, sweating, headache, nausea, diarrhoea, muscle pain",
+        "Am experiencing chills, high fever, sweating, headache, nausea, diarrhoea, muscle pain",
+        "Am experiencing chills, vomiting, sweating, headache, nausea, diarrhoea, muscle pain",
+        "Am experiencing chills, vomiting, high fever, headache, nausea, diarrhoea, muscle pain",
+        "Am experiencing chills, vomiting, high fever, sweating, nausea, diarrhoea, muscle pain",
+        "Am experiencing chills, vomiting, high fever, sweating, headache, diarrhoea, muscle pain",
+        "Am experiencing chills, vomiting, high fever, sweating, headache, nausea, muscle pain"
+
+      ],
+      "responses": [
+        "You may have Malaria. Take the following Precautions: Consult nearest hospital, avoid oily food, avoid non veg food, keep mosquitos out."
+
+      ]
+    },
+
+     {
+      "tag": "Chicken pox",
+      "patterns": [
+         "Am experiencing itching, skin rash, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body",
+        "Am experiencing skin rash, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body",
+        "Am experiencing itching, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body",
+        "Am experiencing itching, skin rash, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body",
+        "Am experiencing itching, skin rash, fatigue, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body",
+        "Am experiencing itching, skin rash, fatigue, lethargy, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body",
+        "Am experiencing itching, skin rash, fatigue, lethargy, high fever, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body",
+        "Am experiencing itching, skin rash, fatigue, lethargy, high fever, headache, mild fever, swelled lymph nodes, malaise, red spots over body",
+        "Am experiencing itching, skin rash, fatigue, lethargy, high fever, headache, loss of appetite, swelled lymph nodes, malaise, red spots over body",
+        "Am experiencing itching, skin rash, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, malaise, red spots over body"
+
+      ],
+      "responses": [
+        "You may have Chicken pox. Take the following Precautions: use neem in bathing, consume neem leave, take vaccine, avoid public places."
+
+      ]
+    },
+
+     {
+      "tag": "Dengue",
+      "patterns": [
+         "Am experiencing skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, muscle pain, red spots over body",
+        "Am experiencing skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, red spots over body",
+        "Am experiencing skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain",
+        "Am experiencing skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body",
+        "Am experiencing chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body",
+        "Am experiencing skin rash, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body",
+        "Am experiencing skin rash, chills, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body",
+        "Am experiencing skin rash, chills, joint pain, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body",
+        "Am experiencing skin rash, chills, joint pain, vomiting, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body",
+        "skin rash, chills, joint pain, vomiting, fatigue, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body"
+      ],
+      "responses": [
+        "You may have Dengue. Take the following Precautions: drink papaya leaf juice, avoid fatty spicy food, keep mosquito's away, keep hydrated."
+
+      ]
+    },
+
+     {
+      "tag": "Typhoid",
+      "patterns": [
+         "Am experiencing chills, vomiting, fatigue, high fever, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain",
+        "Am experiencing chills, vomiting, fatigue, high fever, headache, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain",
+        "Am experiencing chills, vomiting, fatigue, high fever, headache, nausea, abdominal pain, diarrhoea, toxic look (typhos), belly pain",
+        "Am experiencing chills, vomiting, fatigue, high fever, headache, nausea, constipation, diarrhoea, toxic look (typhos), belly pain",
+        "Am experiencing chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, toxic look (typhos), belly pain",
+        "Am experiencing chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, belly pain",
+        "Am experiencing chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos)",
+        "Am experiencing chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain",
+        "Am experiencing chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain",
+        "chills, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain"
+      ],
+      "responses": [
+        "You may have Typhoid. Take the following Precautions: eat high calorie vegitables, antibiotic therapy, consult doctor, take medication."
+
+      ]
+    },
+
+    {
+      "tag": "Hepatitis A",
+      "patterns": [
+         "Am experiencing joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain",
+        "Am experiencing joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain",
+        "Am experiencing vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain",
+        "Am experiencing joint, pain, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain",
+        "Am experiencing joint pain, vomiting, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain",
+        "Am experiencing joint pain, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain",
+        "Am experiencing joint pain, vomiting, yellowish skin, dark urine, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain",
+        "Am experiencing joint pain, vomiting, yellowish skin, dark urine, nausea, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain",
+        "Am experiencing joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, diarrhoea, mild fever, yellowing of eyes, muscle pain",
+        "Am experiencing joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, mild fever, yellowing of eyes, muscle pain"
+      ],
+      "responses": [
+        "You may have Hepatitis A. Take the following Precautions: Consult nearest hospital, wash hands through, avoid fatty spicy food, Take medication."
+
+      ]
+    },
+
+     {
+      "tag": "Hepatitis B",
+      "patterns": [
+         "Am experiencing itching, fatigue, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections",
+        "Am experiencing itching, fatigue, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections",
+        "Am experiencing fatigue, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections",
+        "Am experiencing itching, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections",
+        "Am experiencing itching, fatigue, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections",
+        "Am experiencing itching, fatigue, lethargy, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections",
+        "Am experiencing itching, fatigue, lethargy, yellowish skin, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections",
+        "Am experiencing itching, fatigue, lethargy, yellowish skin, dark urine, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections",
+        "Am experiencing itching, fatigue, lethargy, yellowish skin, dark urine, loss of appetite, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections",
+        "Am experiencing itching, fatigue, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections"
+      ],
+      "responses": [
+        "You may have Hepatitis B. Take the following Precautions: consult nearest hospital, take vaccination, eat healthy, take medication."
+
+      ]
+    },
+
+     {
+      "tag": "Hepatitis C",
+      "patterns": [
+         "Am experiencing fatigue, yellowish skin, nausea, loss of appetite, family history",
+        "Am experiencing fatigue, yellowish skin, nausea, loss of appetite, yellowing of eyes, family history",
+        "Am experiencing yellowish skin, nausea, loss of appetite, yellowing of eyes, family history",
+        "Am experiencing fatigue, nausea, loss of appetite, yellowing of eyes, family history",
+        "Am experiencing fatigue, yellowish skin, loss of appetite, yellowing of eyes, family history",
+        "Am experiencing fatigue, yellowish skin, nausea, yellowing of eyes, family history",
+        "Am experiencing fatigue, yellowish skin, nausea, loss of appetite, family history",
+        "Am experiencing fatigue, yellowish skin, nausea, loss of appetite, yellowing of eyes",
+        "Am experiencing fatigue, yellowish skin, nausea, loss of appetite, yellowing of eyes, family history",
+        "Am experiencing fatigue, yellowish skin, nausea, loss of appetite, yellowing of eyes, family history"
+
+      ],
+      "responses": [
+        "You may have Hepatitis C. Take the following Precautions: consult nearest hospital, take vaccination, eat healthy, take medication."
+
+      ]
+    },
+
+     {
+      "tag": "Hepatitis D",
+      "patterns": [
+         "Am experiencing joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing joint pain, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing joint pain, vomiting, fatigue, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing joint pain, vomiting, fatigue, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing joint pain, vomiting, fatigue, yellowish skin, dark urine, loss of appetite, abdominal pain, yellowing of eyes",
+        "Am experiencing joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, abdominal pain, yellowing of eyes",
+        "Am experiencing joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, yellowing of eyes",
+        "Am experiencing joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain"
+      ],
+      "responses": [
+        "You may have Hepatitis D. Take the following Precautions: consult nearest hospital, do follow up eat healthy, take medication."
+
+      ]
+    },
+
+
+     {
+      "tag": "Hepatitis E",
+      "patterns": [
+         "Am experiencing joint pain, vomiting, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, coma, stomach bleeding",
+        "Am experiencing joint pain, vomiting, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding",
+        "Am experiencing joint pain, vomiting, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding",
+        "Am experiencing vomiting, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding",
+        "Am experiencing joint pain, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding",
+        "Am experiencing joint pain, vomiting, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding",
+        "Am experiencing joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding",
+        "Am experiencing joint pain, vomiting, fatigue, high fever, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding",
+        "Am experiencing joint pain, vomiting, fatigue, high fever, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding",
+        "Am experiencing joint pain, vomiting, fatigue, high fever, yellowish skin, dark urine, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"
+      ],
+      "responses": [
+        "You may have Hepatitis E. Take the following Precautions: stop alcohol consumption, take rest, consult doctor, take medication."
+
+      ]
+    },
+
+     {
+      "tag": "Alcoholic hepatitis",
+      "patterns": [
+         "Am experiencing vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload",
+        "Am experiencing vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload",
+        "Am experiencing yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload",
+        "Am experiencing vomiting, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload",
+        "Am experiencing vomiting, yellowish skin, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload",
+        "Am experiencing vomiting, yellowish skin, abdominal pain, distention of abdomen, history of alcohol consumption, fluid overload",
+        "Am experiencing vomiting, yellowish skin, abdominal pain, swelling of stomach, history of alcohol consumption, fluid overload",
+        "Am experiencing vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, fluid overload",
+        "Am experiencing vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption",
+        "Am experiencing vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload"
+      ],
+      "responses": [
+        "You may have Alcoholic hepatitis. Take the following Precautions: stop alcohol consumption, consult doctor, medication."
+
+      ]
+    },
+
+     {
+      "tag": "Allergy",
+      "patterns": [
+         "Am experiencing continuous sneezing, shivering, chills, watering from eyes",
+         "Experiencing shivering, chills, watering from eyes",
+         "Experiencing continuous sneezing, chills, watering from eyes",
+         "Experiencing continuous sneezing, shivering, watering from eyes",
+         "Experiencing continuous sneezing, shivering, chills"
+      ],
+      "responses": [
+        "You may have Allergy. Take the following Precautions: Apply calamine, cover area with bandage, use ice to compress itching."
+
+      ]
+    },
+
+     {
+      "tag": "Tuberculosis",
+      "patterns": [
+         "Am experiencing chills, vomiting, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum",
+        "Am experiencing chills, vomiting, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum",
+        "Am experiencing vomiting, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum",
+        "Am experiencing chills, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum",
+        "Am experiencing chills, vomiting, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum",
+        "Am experiencing chills, vomiting, fatigue, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum",
+        "Am experiencing chills, vomiting, fatigue, weight loss, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum",
+        "Am experiencing chills, vomiting, fatigue, weight loss, cough, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum",
+        "Am experiencing chills, vomiting, fatigue, weight loss, cough, high fever, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum",
+        "chills, vomiting, fatigue, weight loss, cough, high fever, breathlessness, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"
+      ],
+      "responses": [
+        "You may have Tuberculosis. Take the following Precautions: cover mouth, consult doctor, take medication, rest."
+
+      ]
+    },
+
+     {
+      "tag": "Common Cold",
+      "patterns": [
+         "Am experiencing continuous sneezing, chills, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain",
+        "Am experiencing continuous sneezing, chills, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain",
+        "Am experiencing chills, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain",
+        "Am experiencing continuous sneezing, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain",
+        "Am experiencing continuous sneezing, chills, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain",
+        "Am experiencing continuous sneezing, chills, fatigue, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain",
+        "Am experiencing continuous sneezing, chills, fatigue, cough, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain",
+        "Am experiencing continuous sneezing, chills, fatigue, cough, high fever, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain",
+        "Am experiencing continuous sneezing, chills, fatigue, cough, high fever, headache, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain",
+        "Am experiencing continuous sneezing, chills, fatigue, cough, high fever, headache, swelled lymph nodes, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"
+      ],
+      "responses": [
+        "You may have Common Cold. Take the following Precautions: drink vitamin c rich drinks, take vapour, avoid cold food, keep fever in check."
+
+      ]
+    },
+
+     {
+      "tag": "Pneumonia",
+      "patterns": [
+         "Am experiencing chills, fatigue, cough, high fever, breathlessness, sweating, malaise, chest pain, fast heart rate, rusty sputum",
+        "Am experiencing chills, fatigue, cough, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum",
+        "Am experiencing chills, fatigue, cough, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum",
+        "Am experiencing fatigue, cough, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum",
+        "Am experiencing chills, cough, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum",
+        "Am experiencing chills, fatigue, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum",
+        "Am experiencing chills, fatigue, cough, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum",
+        "Am experiencing chills, fatigue, cough, high fever, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum",
+        "Am experiencing chills, fatigue, cough, high fever, breathlessness, malaise, phlegm, chest pain, fast heart rate, rusty sputum",
+        "Am experiencing chills, fatigue, cough, high fever, breathlessness, sweating, phlegm, chest pain, fast heart rate, rusty sputum"
+      ],
+      "responses": [
+        "You may have Pneumonia. Take the following Precautions: consult doctor, medication, rest, follow up."
+
+      ]
+    },
+
+     {
+      "tag": "Dimorphic hemmorhoids(piles)",
+      "patterns": [
+         "Am experiencing constipation, pain during bowel movements, pain in anal region, bloody stool, irritation in anus",
+        "Am experiencing constipation, pain during bowel movements, pain in anal region, bloody stool, irritation in anus",
+        "Am experiencing constipation, pain during bowel movements, pain in anal region, bloody stool, irritation in anus",
+        "Am experiencing pain during bowel movements, pain in anal region, bloody stool, irritation in anus",
+        "Am experiencing constipation, pain in anal region, bloody stool, irritation in anus",
+        "Am experiencing constipation, pain during bowel movements, bloody stool, irritation in anus",
+        "Am experiencing constipation, pain during bowel movements, pain in anal region, irritation in anus",
+        "Am experiencing constipation, pain during bowel movements, pain in anal region, bloody stool",
+        "Am experiencing constipation, pain during bowel movements, pain in anal region, bloody stool, irritation in anus",
+        "Am experiencing constipation, pain during bowel movements, pain in anal region, bloody stool, irritation in anus"
+      ],
+      "responses": [
+        "You may have Dimorphic hemmorhoids(piles). Take the following Precautions: avoid fatty spicy food, consume witch hazel, warm bath with epsom salt, consume alovera juice."
+
+      ]
+    },
+
+     {
+      "tag": "Heart attack",
+      "patterns": [
+         "Am experiencing vomiting, breathlessness, sweating, chest pain",
+        "Am experiencing vomiting, breathlessness, sweating, chest pain",
+        "Am experiencing breathlessness, sweating, chest pain",
+        "Am experiencing vomiting, sweating, chest pain",
+        "Am experiencing vomiting, breathlessness, chest pain",
+        "Am experiencing vomiting, breathlessness, sweating",
+        "Am experiencing vomiting, breathlessness, sweating, chest pain",
+        "Am experiencing breathlessness, sweating, chest pain",
+        "Am experiencing vomiting, sweating, chest pain",
+        "Am experiencing vomiting, breathlessness, chest pain"
+      ],
+      "responses": [
+        "You may have Heart attack. Take the following Precautions: call doctor, chew or swallow asprin, keep calm."
+
+      ]
+    },
+
+     {
+      "tag": "Varicose veins",
+      "patterns": [
+         "Am experiencing fatigue, cramps, bruising, obesity, swollen legs, swollen blood vessels, prominent veins on calf",
+        "Am experiencing fatigue, cramps, bruising, obesity, swollen legs, swollen blood vessels, prominent veins on calf",
+        "Am experiencing cramps, bruising, obesity, swollen legs, swollen blood vessels, prominent veins on calf",
+        "Am experiencing fatigue, bruising, obesity, swollen legs, swollen blood vessels, prominent veins on calf",
+        "Am experiencing fatigue, cramps, obesity, swollen legs, swollen blood vessels, prominent veins on calf",
+        "Am experiencing fatigue, cramps, bruising, swollen legs, swollen blood vessels, prominent veins on calf",
+        "Am experiencingfatigue, cramps, bruising, obesity, swollen blood vessels, prominent veins on calf",
+        "Am experiencing fatigue, cramps, bruising, obesity, swollen legs, prominent veins on calf",
+        "Am experiencing fatigue, cramps, bruising, obesity, swollen legs, swollen blood vessels",
+        "Am experiencing fatigue, cramps, bruising, obesity, swollen legs, prominent veins on calf"
+      ],
+      "responses": [
+        "You may have Varicose veins. Take the following Precautions: lie down flat and raise the leg high, use ointments, use vein compression, dont stand still for long."
+
+      ]
+    },
+
+     {
+      "tag": "Hypothyroidism",
+      "patterns": [
+         "Am experiencing fatigue, weight gain, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation",
+        "Am experiencing fatigue, weight gain, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation",
+        "Am experiencing weight gain, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation",
+        "Am experiencing weight gain, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation",
+        "Am experiencing fatigue, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation",
+        "Am experiencing fatigue, weight gain, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation",
+        "Am experiencing fatigue, weight gain, cold hands and feets, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation",
+        "Am experiencing fatigue, weight gain, cold hands and feets, mood swings, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation",
+        "Am experiencing fatigue, weight gain, cold hands and feets, mood swings, lethargy, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation",
+        "Am experiencing fatigue, weight gain, cold hands and feets, mood swings, lethargy, dizziness, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"
+      ],
+      "responses": [
+        "You may have Hypothyroidism. Take the following Precautions: reduce stress, exercise, eat healthy, get proper sleep."
+
+      ]
+    },
+
+     {
+      "tag": "Hyperthyroidism",
+      "patterns": [
+         "Am experiencing Hyperthyroidism, fatigue, mood swings, weight loss, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation",
+        "Am experiencing fatigue, mood swings, weight loss, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation",
+        "Am experiencing mood swings, weight loss, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation",
+        "Am experiencing fatigue, weight loss, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation",
+        "Am experiencing fatigue, mood swings, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation",
+        "Am experiencing fatigue, mood swings, weight loss, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation",
+        "Am experiencing fatigue, mood swings, weight loss, restlessness, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation",
+        "Am experiencing fatigue, mood swings, weight loss, restlessness, sweating, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation",
+        "Am experiencing fatigue, mood swings, weight loss, restlessness, sweating, diarrhoea, excessive hunger, muscle weakness, irritability, abnormal menstruation",
+        "Am experiencing fatigue, mood swings, weight loss, restlessness, sweating, diarrhoea, fast heart rate, muscle weakness, irritability, abnormal menstruation"
+      ],
+      "responses": [
+        "You may have Hyperthyroidism. Take the following Precautions: eat healthy, massage, use lemon balm, take radioactive iodine treatment."
+
+      ]
+    },
+
+     {
+      "tag": "Hypoglycemia",
+      "patterns": [
+         "Am experiencing vomiting, fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, slurred speech, irritability, palpitations",
+        "Am experiencing vomiting, fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitation",
+        "Am experiencing vomiting, fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations",
+        "Am experiencing fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations",
+        "Am experiencing vomiting, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations",
+        "Am experiencing vomiting, fatigue, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations",
+        "Am experiencing vomiting, fatigue, anxiety, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations",
+        "Am experiencing vomiting, fatigue, anxiety, sweating, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations",
+        "Am experiencing vomiting, fatigue, anxiety, sweating, headache, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations",
+        "Am experiencing vomiting, fatigue, anxiety, sweating, headache, nausea, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"
+      ],
+      "responses": [
+        "You may have Hypoglycemia. Take the following Precautions: lie down on sideways, check in pulse, drink sugary drinks, consult doctor."
+
+      ]
+    },
+
+     {
+      "tag": "Osteoarthristis",
+      "patterns": [
+         "Am experiencing joint pain, neck pain, knee pain, hip joint pain, swelling joints, painful walking",
+        "Am experiencing joint pain, neck pain, knee pain, hip joint pain, swelling joints, painful walking",
+        "Am experiencing neck pain, knee pain, hip joint pain, swelling joints, painful walking",
+        "Am experiencing joint pain, knee pain, hip joint pain, swelling joints, painful walking",
+        "Am experiencing joint pain, neck pain, hip joint pain, swelling joints, painful walking",
+        "Am experiencing joint pain, neck pain, knee pain, swelling joints, painful walking",
+        "Am experiencing joint pain, neck pain, knee pain, hip joint pain, painful walking",
+        "Am experiencing joint pain, neck pain, knee pain, hip joint pain, swelling joints",
+        "Am experiencing joint pain, neck pain, knee pain, hip joint pain, swelling joints, painful walking",
+        "Am experiencing joint, pain, neck pain, knee pain, hip joint pain, swelling joints, painful walking"
+      ],
+      "responses": [
+        "You may have Osteoarthristis. Take the following Precautions: take acetaminophen, consult nearest hospital, follow up, salt baths."
+
+      ]
+    },
+
+     {
+      "tag": "Arthritis",
+      "patterns": [
+         "Am experiencing, muscle weakness, stiff neck, swelling joints, movement stiffness, painful walking",
+        "Am experiencing muscle weakness, stiff neck, swelling joints, movement stiffness, painful walking",
+        "Am experiencing stiff neck, swelling joints, movement stiffness, painful walking",
+        "Am experiencing muscle weakness, swelling joints, movement stiffness, painful walking",
+        "Am experiencing muscle weakness, stiff neck, movement stiffness, painful walking",
+        "Am experiencing muscle weakness, stiff neck, swelling joints, painful walking",
+        "Am experiencing muscle weakness, stiff neck, swelling joints, movement stiffness, painful walking",
+        "Am experiencing muscle weakness, stiff neck, swelling joints, movement stiffness",
+        "Am experiencing muscle weakness, stiff neck, swelling joints, movement stiffness, painful walking",
+        "Am experiencing muscle weakness, stiff neck, swelling joints, movement stiffness, painful walking"
+      ],
+      "responses": [
+        "You may have Arthritis. Take the following Precautions: do exercise, use hot and cold therapy, try acupuncture, massage."
+
+      ]
+    },
+
+     {
+      "tag": "Paroymsal Positional Vertigo",
+      "patterns": [
+         "Am experiencing vomiting, headache, nausea, spinning movements, loss of balance, unsteadiness",
+        "Am experiencing vomiting, headache, nausea, spinning movements, loss of balance, unsteadiness",
+        "Am experiencing headache, nausea, spinning movements, loss of balance, unsteadiness",
+        "Am experiencing vomiting, nausea, spinning movements, loss of balance, unsteadiness",
+        "Am experiencing vomiting, headache, spinning movements, loss of balance, unsteadiness",
+        "Am experiencing vomiting, headache, nausea, loss of balance, unsteadiness",
+        "Am experiencing vomiting, headache, nausea, spinning movements, unsteadiness",
+        "Am experiencing vomiting, headache, nausea, spinning movements, loss of balance",
+        "Am experiencing vomiting, headache, nausea, spinning movements, loss of balance, unsteadiness",
+        "Am experiencing vomiting, headache, nausea, loss of balance, unsteadiness"
+      ],
+      "responses": [
+        "You may have Paroymsal Positional Vertigo. Take the following Precautions: lie down, avoid sudden change in body, avoid abrupt head movement, relax."
+
+      ]
+    }
+
+  ]
+}
